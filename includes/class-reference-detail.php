@@ -130,9 +130,17 @@ class RefService_Reference_Detail
      */
     private function render_detail_html($reference, $company)
     {
+        RefService_Display::get_instance()->enqueue_styles();
+
         $display_mode = get_option('refservice_display_mode', 'themed');
-        $company_color = isset($company['color']) ? esc_attr($company['color']) : '#000000';
-        $company_color_text = isset($company['color_text']) ? esc_attr($company['color_text']) : '#ffffff';
+        $company_color = !empty($company['color']) ? sanitize_hex_color($company['color']) : '';
+        if (empty($company_color)) {
+            $company_color = '#000000';
+        }
+        $company_color_text = !empty($company['color_text']) ? sanitize_hex_color($company['color_text']) : '';
+        if (empty($company_color_text)) {
+            $company_color_text = '#ffffff';
+        }
         $wrapper_class = 'refservice-reference-detail refservice-' . esc_attr($display_mode);
 
         // Allow themes to override the template:

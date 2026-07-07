@@ -1,10 +1,9 @@
-(function(blocks, element, components, i18n, blockEditor, data, serverSideRender) {
+(function(blocks, element, components, i18n, blockEditor, serverSideRender) {
     const { registerBlockType } = blocks;
     const { createElement: el } = element;
-    const { PanelBody, TextControl, SelectControl, RangeControl, ToggleControl } = components;
+    const { PanelBody, TextControl, SelectControl, RangeControl } = components;
     const { __ } = i18n;
     const { InspectorControls, useBlockProps } = blockEditor;
-    const { useSelect } = data;
     // wp.serverSideRender IS the component itself (or an ES module default).
     const ServerSideRender = serverSideRender && serverSideRender.default ? serverSideRender.default : serverSideRender;
 
@@ -136,7 +135,6 @@
     window.wp.components,
     window.wp.i18n,
     window.wp.blockEditor,
-    window.wp.data,
     window.wp.serverSideRender
 );
 

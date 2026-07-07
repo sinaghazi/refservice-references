@@ -103,7 +103,7 @@ class RefService_Language
         // Priority 1: Explicitly set language
         if (!empty($explicit_language)) {
             $languages = $this->get_company_languages();
-            if (in_array($explicit_language, $languages)) {
+            if (in_array($explicit_language, $languages, true)) {
                 return $explicit_language;
             }
         }
@@ -112,7 +112,7 @@ class RefService_Language
         $wp_locale = $this->get_wordpress_locale();
         $languages = $this->get_company_languages();
         
-        if (!empty($languages) && in_array($wp_locale, $languages)) {
+        if (!empty($languages) && in_array($wp_locale, $languages, true)) {
             return $wp_locale;
         }
 

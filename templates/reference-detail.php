@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
         <header class="refservice-detail-header">
             <?php if (!empty($reference['product']['name']) || !empty($reference['service']['name'])) : ?>
                 <span class="refservice-detail-category">
-                    <?php echo esc_html($reference['product']['name'] ?? $reference['service']['name']); ?>
+                    <?php echo esc_html(!empty($reference['product']['name']) ? $reference['product']['name'] : $reference['service']['name']); ?>
                 </span>
             <?php endif; ?>
             

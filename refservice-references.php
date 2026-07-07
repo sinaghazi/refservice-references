@@ -3,7 +3,7 @@
  * Plugin Name: Referenssipalvelu References
  * Plugin URI: https://referenssipalvelu.fi
  * Description: Display your company references from Referenssipalvelu on your WordPress website. Lightweight plugin that integrates with your Referenssipalvelu account.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Inmedia Systems Oy
  * Author URI: https://inmedia.fi
  * License: GPL v2 or later
@@ -12,6 +12,7 @@
  * Domain Path: /languages
  * Requires at least: 5.9
  * Requires PHP: 7.4
+ * Update URI: https://referenssipalvelu.fi
  */
 
 // Exit if accessed directly
@@ -20,7 +21,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('REFSERVICE_PLUGIN_VERSION', '2.0.0');
+define('REFSERVICE_PLUGIN_VERSION', '2.0.1');
 define('REFSERVICE_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('REFSERVICE_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('REFSERVICE_PLUGIN_BASENAME', plugin_basename(__FILE__));

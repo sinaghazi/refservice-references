@@ -2,8 +2,8 @@
 Contributors: inmediasystems
 Tags: references, testimonials, portfolio, case studies, api
 Requires at least: 5.9
-Tested up to: 6.8
-Stable tag: 2.0.0
+Tested up to: 7.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -83,8 +83,15 @@ Yes, the plugin caches API responses to improve performance. You can configure t
 
 == Changelog ==
 
+= 2.0.1 =
+* Performance: plugin CSS is now loaded only on pages that actually display references, instead of on every page
+* Security hardening: company brand colors from the API are now validated as hex colors on the reference detail page
+* Added an Update URI plugin header so wordpress.org can never offer an unrelated same-slug plugin as an update
+* Fixed the category label falling back incorrectly when the API returns an empty product name alongside a service name
+* Confirmed compatibility with WordPress 7.0
+
 = 2.0.0 =
-* Fixed bugs and improved the plugin 
+* Fixed bugs and improved the plugin
 
 = 1.0.0 =
 * Initial release
@@ -96,6 +103,9 @@ Yes, the plugin caches API responses to improve performance. You can configure t
 * Caching support
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+Performance and hardening release: conditional CSS loading, stricter color validation, WordPress 7.0 compatibility.
 
 = 2.0.0 =
 Initial release of Public RefService References plugin for WordPress.

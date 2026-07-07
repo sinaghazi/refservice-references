@@ -58,7 +58,7 @@ class RefService_References_Block
         wp_register_script(
             'refservice-references-block-editor',
             REFSERVICE_PLUGIN_URL . 'assets/js/block-editor.js',
-            array('wp-blocks', 'wp-element', 'wp-components', 'wp-i18n', 'wp-block-editor', 'wp-server-side-render', 'wp-data'),
+            array('wp-blocks', 'wp-element', 'wp-components', 'wp-i18n', 'wp-block-editor', 'wp-server-side-render'),
             REFSERVICE_PLUGIN_VERSION,
             true
         );

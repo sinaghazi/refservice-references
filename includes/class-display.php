@@ -40,31 +40,33 @@ class RefService_Display
     }
 
     /**
-     * Enqueue assets
+     * Register assets. Nothing is enqueued here: enqueue_styles() runs when
+     * a reference list or detail is actually rendered, so pages without
+     * plugin output load no plugin CSS. On the shortcode path that happens
+     * during the_content, and WordPress then prints the styles in the footer.
      */
     public function enqueue_assets()
     {
         $display_mode = get_option('refservice_display_mode', 'themed');
-        
-        // Only load full CSS in themed mode
+
+        // Full CSS in themed mode, structural-only CSS in no-themed mode
         if ($display_mode === 'themed') {
-            wp_enqueue_style(
+            wp_register_style(
                 'refservice-references-style',
                 REFSERVICE_PLUGIN_URL . 'assets/css/style.css',
                 array(),
                 REFSERVICE_PLUGIN_VERSION
             );
         } else {
-            // Load minimal CSS for no-themed mode
-            wp_enqueue_style(
+            wp_register_style(
                 'refservice-references-minimal',
                 REFSERVICE_PLUGIN_URL . 'assets/css/style-minimal.css',
                 array(),
                 REFSERVICE_PLUGIN_VERSION
             );
         }
-        
-        // Carousel JS (loaded on demand via wp_footer, but register here)
+
+        // Carousel JS (enqueued on demand when a carousel renders)
         wp_register_script(
             'refservice-carousel',
             REFSERVICE_PLUGIN_URL . 'assets/js/carousel.js',
@@ -72,8 +74,8 @@ class RefService_Display
             REFSERVICE_PLUGIN_VERSION,
             true
         );
-        
-        // Load custom CSS if provided
+
+        // Attach custom CSS so it prints whenever the stylesheet does
         $custom_css = get_option('refservice_custom_css', '');
         if (!empty($custom_css)) {
             wp_add_inline_style(
@@ -81,6 +83,20 @@ class RefService_Display
                 $custom_css
             );
         }
+    }
+
+    /**
+     * Enqueue the stylesheet for the active display mode. Called at render
+     * time by both the list and the detail views. Safe to call before the
+     * wp_enqueue_scripts registration has run: the handle is queued and
+     * resolved when styles are printed.
+     */
+    public function enqueue_styles()
+    {
+        $display_mode = get_option('refservice_display_mode', 'themed');
+        wp_enqueue_style(
+            $display_mode === 'themed' ? 'refservice-references-style' : 'refservice-references-minimal'
+        );
     }
 
     /**
@@ -153,6 +169,8 @@ class RefService_Display
      */
     private function render_references_html($references, $company, $layout, $columns)
     {
+        $this->enqueue_styles();
+
         $display_mode = get_option('refservice_display_mode', 'themed');
         $company_color = !empty($company['color']) ? sanitize_hex_color($company['color']) : '';
         if (empty($company_color)) {
@@ -224,7 +242,7 @@ class RefService_Display
         <div class="refservice-reference-content">
             <?php if (!empty($reference['product']['name']) || !empty($reference['service']['name'])) : ?>
                 <span class="refservice-reference-category">
-                    <?php echo esc_html($reference['product']['name'] ?? $reference['service']['name']); ?>
+                    <?php echo esc_html(!empty($reference['product']['name']) ? $reference['product']['name'] : $reference['service']['name']); ?>
                 </span>
             <?php endif; ?>
             
