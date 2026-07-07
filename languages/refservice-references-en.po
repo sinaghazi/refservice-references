@@ -1,0 +1,534 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Referenssipalvelu References 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-07 20:02+0300\n"
+"PO-Revision-Date: 2026-07-07 20:06+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class-api-client.php:64
+msgid "API key is not configured."
+msgstr "API key is not configured."
+
+#: includes/class-api-client.php:83 includes/class-api-client.php:132
+msgid "API request failed."
+msgstr "API request failed."
+
+#: includes/class-api-client.php:146
+msgid "Invalid JSON response from API."
+msgstr "Invalid JSON response from API."
+
+#: includes/class-display.php:135
+msgid "No references found."
+msgstr "No references found."
+
+#: includes/class-display.php:187
+msgid "Previous"
+msgstr "Previous"
+
+#: includes/class-display.php:190
+msgid "Next"
+msgstr "Next"
+
+#: includes/class-display.php:285
+msgid "Read More"
+msgstr "Read More"
+
+#: includes/class-reference-detail.php:66
+msgid "Reference ID is required."
+msgstr "Reference ID is required."
+
+#: includes/class-reference-detail.php:94
+msgid "Reference not found."
+msgstr "Reference not found."
+
+#: includes/class-settings.php:62
+msgid "Referenssipalvelu References Settings"
+msgstr "Referenssipalvelu References Settings"
+
+#: includes/class-settings.php:63 assets/js/block-editor.js:12
+msgid "Referenssipalvelu References"
+msgstr "Referenssipalvelu References"
+
+#: includes/class-settings.php:102
+msgid "API Configuration"
+msgstr "API Configuration"
+
+#: includes/class-settings.php:109
+msgid "API Key"
+msgstr "API Key"
+
+#: includes/class-settings.php:117
+msgid "API Endpoint URL"
+msgstr "API Endpoint URL"
+
+#: includes/class-settings.php:125
+msgid "Cache Duration (minutes)"
+msgstr "Cache Duration (minutes)"
+
+#: includes/class-settings.php:133
+msgid "Default References Limit"
+msgstr "Default References Limit"
+
+#: includes/class-settings.php:141
+msgid "Default Layout"
+msgstr "Default Layout"
+
+#: includes/class-settings.php:150 assets/js/block-editor.js:56
+msgid "Display Settings"
+msgstr "Display Settings"
+
+#: includes/class-settings.php:157
+msgid "Display Mode"
+msgstr "Display Mode"
+
+#: includes/class-settings.php:165
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: includes/class-settings.php:173
+msgid "Reference Detail URL Pattern"
+msgstr "Reference Detail URL Pattern"
+
+#: includes/class-settings.php:248
+msgid "Configure your Referenssipalvelu API connection below."
+msgstr "Configure your Referenssipalvelu API connection below."
+
+#: includes/class-settings.php:258
+msgid "Leave empty to keep the current key"
+msgstr "Leave empty to keep the current key"
+
+#: includes/class-settings.php:259
+msgid "Enter your API key"
+msgstr "Enter your API key"
+
+#. translators: %s: masked API key showing only the last four characters.
+#: includes/class-settings.php:272
+#, php-format
+msgid ""
+"A key is configured. Current key: %s. Leave the field empty to keep the "
+"existing key."
+msgstr ""
+"A key is configured. Current key: %s. Leave the field empty to keep the "
+"existing key."
+
+#: includes/class-settings.php:279
+msgid "Remove the stored API key on save (disconnects this site from the API)"
+msgstr "Remove the stored API key on save (disconnects this site from the API)"
+
+#: includes/class-settings.php:283
+msgid ""
+"Based on your package, you can request activation of API Service and obtain "
+"an API key from your Referenssipalvelu account manager."
+msgstr ""
+"Based on your package, you can request activation of API Service and obtain "
+"an API key from your Referenssipalvelu account manager."
+
+#: includes/class-settings.php:306
+msgid "Edit"
+msgstr "Edit"
+
+#: includes/class-settings.php:309
+msgid ""
+"The hosted Referenssipalvelu API endpoint. This is pre-configured and "
+"normally should not be changed. Click \"Edit\" only if you are connecting to "
+"a different or local installation."
+msgstr ""
+"The hosted Referenssipalvelu API endpoint. This is pre-configured and "
+"normally should not be changed. Click \"Edit\" only if you are connecting to "
+"a different or local installation."
+
+#: includes/class-settings.php:328
+msgid "How long to cache API responses in minutes. Recommended: 15-30 minutes."
+msgstr ""
+"How long to cache API responses in minutes. Recommended: 15-30 minutes."
+
+#: includes/class-settings.php:346
+msgid ""
+"Default number of references to display. Leave empty for all references."
+msgstr ""
+"Default number of references to display. Leave empty for all references."
+
+#: includes/class-settings.php:359 assets/js/block-editor.js:73
+msgid "Grid"
+msgstr "Grid"
+
+#: includes/class-settings.php:360 assets/js/block-editor.js:74
+msgid "List"
+msgstr "List"
+
+#: includes/class-settings.php:361 assets/js/block-editor.js:75
+msgid "Carousel"
+msgstr "Carousel"
+
+#: includes/class-settings.php:364
+msgid ""
+"Default layout for displaying references. Can be overridden per shortcode/"
+"block."
+msgstr ""
+"Default layout for displaying references. Can be overridden per shortcode/"
+"block."
+
+#: includes/class-settings.php:374
+msgid "Configure how references are displayed on your site."
+msgstr "Configure how references are displayed on your site."
+
+#: includes/class-settings.php:385
+msgid "Themed (Plugin Styles)"
+msgstr "Themed (Plugin Styles)"
+
+#: includes/class-settings.php:386
+msgid "No-Themed (Theme Controls)"
+msgstr "No-Themed (Theme Controls)"
+
+#: includes/class-settings.php:389
+msgid ""
+"Themed: loads the full plugin stylesheet (cards, shadows, colors, hover "
+"effects) — works out of the box on any theme."
+msgstr ""
+"Themed: loads the full plugin stylesheet (cards, shadows, colors, hover "
+"effects) — works out of the box on any theme."
+
+#: includes/class-settings.php:391
+msgid ""
+"No-Themed: loads only minimal structural CSS (grid, image ratios, carousel "
+"mechanics) so your theme fully controls the visual styling."
+msgstr ""
+"No-Themed: loads only minimal structural CSS (grid, image ratios, carousel "
+"mechanics) so your theme fully controls the visual styling."
+
+#: includes/class-settings.php:393
+msgid ""
+"Tip: both modes expose the same CSS variables and class names, so the Custom "
+"CSS below works in either mode."
+msgstr ""
+"Tip: both modes expose the same CSS variables and class names, so the Custom "
+"CSS below works in either mode."
+
+#: includes/class-settings.php:409
+msgid "Brand accent color"
+msgstr "Brand accent color"
+
+#: includes/class-settings.php:413
+msgid "Rounded cards + soft shadow"
+msgstr "Rounded cards + soft shadow"
+
+#: includes/class-settings.php:417
+msgid "Compact grid spacing"
+msgstr "Compact grid spacing"
+
+#: includes/class-settings.php:423
+msgid "Quick presets (click to add to the CSS box):"
+msgstr "Quick presets (click to add to the CSS box):"
+
+#: includes/class-settings.php:438
+msgid "Add custom CSS to override plugin styles..."
+msgstr "Add custom CSS to override plugin styles..."
+
+#: includes/class-settings.php:440
+msgid ""
+"Add custom CSS to override plugin styles. This CSS is loaded after the "
+"plugin styles, in both Themed and No-Themed modes."
+msgstr ""
+"Add custom CSS to override plugin styles. This CSS is loaded after the "
+"plugin styles, in both Themed and No-Themed modes."
+
+#: includes/class-settings.php:458
+msgid ""
+"Controls where a reference card's \"Read More\" link points. Two "
+"placeholders are available:"
+msgstr ""
+"Controls where a reference card's \"Read More\" link points. Two "
+"placeholders are available:"
+
+#: includes/class-settings.php:461
+msgid "the reference ID"
+msgstr "the reference ID"
+
+#: includes/class-settings.php:462
+msgid "your company subdomain (from the API)"
+msgstr "your company subdomain (from the API)"
+
+#: includes/class-settings.php:465
+msgid "Choose one of these approaches:"
+msgstr "Choose one of these approaches:"
+
+#: includes/class-settings.php:469
+msgid "Leave empty (default)"
+msgstr "Leave empty (default)"
+
+#: includes/class-settings.php:470
+msgid "links use this site's built-in detail page:"
+msgstr "links use this site's built-in detail page:"
+
+#: includes/class-settings.php:472
+msgid ""
+"Requires \"pretty\" permalinks (Settings > Permalinks, anything other than "
+"\"Plain\")."
+msgstr ""
+"Requires \"pretty\" permalinks (Settings > Permalinks, anything other than "
+"\"Plain\")."
+
+#: includes/class-settings.php:475
+msgid "External Referenssipalvelu page"
+msgstr "External Referenssipalvelu page"
+
+#: includes/class-settings.php:476
+msgid "opens the reference on the hosted service in a new tab:"
+msgstr "opens the reference on the hosted service in a new tab:"
+
+#: includes/class-settings.php:481
+msgid "Another WordPress page"
+msgstr "Another WordPress page"
+
+#: includes/class-settings.php:482
+msgid "point to a page that contains the detail shortcode:"
+msgstr "point to a page that contains the detail shortcode:"
+
+#: includes/class-settings.php:485
+msgid "(then place"
+msgstr "(then place"
+
+#: includes/class-settings.php:485
+msgid "on that page)."
+msgstr "on that page)."
+
+#: includes/class-settings.php:489
+msgid "Note: any pattern beginning with http/https opens in a new browser tab."
+msgstr ""
+"Note: any pattern beginning with http/https opens in a new browser tab."
+
+#: includes/class-settings.php:506
+msgid "Cache cleared successfully."
+msgstr "Cache cleared successfully."
+
+#: includes/class-settings.php:516
+msgid "Save Settings"
+msgstr "Save Settings"
+
+#: includes/class-settings.php:522 includes/class-settings.php:529
+msgid "Clear Cache"
+msgstr "Clear Cache"
+
+#: includes/class-settings.php:525
+msgid "Clear all cached API responses."
+msgstr "Clear all cached API responses."
+
+#: includes/class-settings.php:534
+msgid "Usage"
+msgstr "Usage"
+
+#: includes/class-settings.php:535
+msgid ""
+"You can display references with the Gutenberg block (\"Referenssipalvelu "
+"References\") or with shortcodes on any page, post, or widget."
+msgstr ""
+"You can display references with the Gutenberg block (\"Referenssipalvelu "
+"References\") or with shortcodes on any page, post, or widget."
+
+#: includes/class-settings.php:537
+msgid "Reference list"
+msgstr "Reference list"
+
+#: includes/class-settings.php:541
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/class-settings.php:542
+msgid "What it does"
+msgstr "What it does"
+
+#: includes/class-settings.php:548
+msgid "All references, using your default layout."
+msgstr "All references, using your default layout."
+
+#: includes/class-settings.php:552
+msgid "First 6 references in a 3-column grid."
+msgstr "First 6 references in a 3-column grid."
+
+#: includes/class-settings.php:556
+msgid "List layout (image beside text)."
+msgstr "List layout (image beside text)."
+
+#: includes/class-settings.php:560
+msgid "Sliding carousel showing 3 cards at a time."
+msgstr "Sliding carousel showing 3 cards at a time."
+
+#: includes/class-settings.php:564
+msgid "Only references tagged with those product/service IDs."
+msgstr "Only references tagged with those product/service IDs."
+
+#: includes/class-settings.php:568
+msgid "Filter by your two custom category dimensions."
+msgstr "Filter by your two custom category dimensions."
+
+#: includes/class-settings.php:572
+msgid "Force Finnish (otherwise the language is auto-detected)."
+msgstr "Force Finnish (otherwise the language is auto-detected)."
+
+#: includes/class-settings.php:576
+msgid "Attributes can be combined, e.g."
+msgstr "Attributes can be combined, e.g."
+
+#: includes/class-settings.php:578
+msgid "Single reference detail"
+msgstr "Single reference detail"
+
+#: includes/class-settings.php:579
+msgid ""
+"Show one full reference (hero image, gallery, contact, delivery date) on its "
+"own page:"
+msgstr ""
+"Show one full reference (hero image, gallery, contact, delivery date) on its "
+"own page:"
+
+#: includes/class-settings.php:581
+msgid "An alias"
+msgstr "An alias"
+
+#: includes/class-settings.php:581
+msgid "works too. You can also link cards to the built-in detail route"
+msgstr "works too. You can also link cards to the built-in detail route"
+
+#: includes/class-settings.php:581
+msgid "(see Reference Detail URL Pattern above)."
+msgstr "(see Reference Detail URL Pattern above)."
+
+#: includes/class-settings.php:585
+msgid "Language Support"
+msgstr "Language Support"
+
+#: includes/class-settings.php:592
+msgid ""
+"The plugin automatically detects and uses the appropriate language based on:"
+msgstr ""
+"The plugin automatically detects and uses the appropriate language based on:"
+
+#: includes/class-settings.php:594
+msgid "WordPress site language"
+msgstr "WordPress site language"
+
+#: includes/class-settings.php:595
+msgid "Company enabled languages"
+msgstr "Company enabled languages"
+
+#: includes/class-settings.php:599
+msgid "Not available (check API connection)"
+msgstr "Not available (check API connection)"
+
+#: includes/class-settings.php:602
+msgid "Currently detected language"
+msgstr "Currently detected language"
+
+#: includes/class-settings.php:605
+msgid ""
+"You can override the language by adding the language parameter to "
+"shortcodes: [refservice language=\"fi\"]"
+msgstr ""
+"You can override the language by adding the language parameter to "
+"shortcodes: [refservice language=\"fi\"]"
+
+#: includes/class-shortcode.php:75
+msgid "Reference ID is required. Use: [refservice_detail id=\"1\"]"
+msgstr "Reference ID is required. Use: [refservice_detail id=\"1\"]"
+
+#: templates/reference-detail.php:61
+msgid "Gallery"
+msgstr "Gallery"
+
+#: templates/reference-detail.php:83
+msgid "Contact"
+msgstr "Contact"
+
+#: assets/js/block-editor.js:15
+msgid ""
+"Display your Referenssipalvelu references with filters and customizable "
+"layout."
+msgstr ""
+"Display your Referenssipalvelu references with filters and customizable "
+"layout."
+
+#: assets/js/block-editor.js:58
+msgid "Number of References"
+msgstr "Number of References"
+
+#: assets/js/block-editor.js:64
+msgid "Leave empty to show all references"
+msgstr "Leave empty to show all references"
+
+#: assets/js/block-editor.js:67
+msgid "Layout"
+msgstr "Layout"
+
+#: assets/js/block-editor.js:72
+msgid "Site default"
+msgstr "Site default"
+
+#: assets/js/block-editor.js:80
+msgid "Columns"
+msgstr "Columns"
+
+#: assets/js/block-editor.js:87
+msgid "Filter Settings"
+msgstr "Filter Settings"
+
+#: assets/js/block-editor.js:89
+msgid "Product IDs"
+msgstr "Product IDs"
+
+#: assets/js/block-editor.js:92
+msgid "Comma-separated product IDs (e.g., 1,2,3)"
+msgstr "Comma-separated product IDs (e.g., 1,2,3)"
+
+#: assets/js/block-editor.js:95
+msgid "Service IDs"
+msgstr "Service IDs"
+
+#: assets/js/block-editor.js:98
+msgid "Comma-separated service IDs (e.g., 1,2)"
+msgstr "Comma-separated service IDs (e.g., 1,2)"
+
+#: assets/js/block-editor.js:101
+msgid "Custom Category 1 IDs"
+msgstr "Custom Category 1 IDs"
+
+#: assets/js/block-editor.js:104 assets/js/block-editor.js:110
+msgid "Comma-separated category IDs"
+msgstr "Comma-separated category IDs"
+
+#: assets/js/block-editor.js:107
+msgid "Custom Category 2 IDs"
+msgstr "Custom Category 2 IDs"
+
+#: assets/js/block-editor.js:113
+msgid "Language Code"
+msgstr "Language Code"
+
+#: assets/js/block-editor.js:116
+msgid "Language code (e.g., en, fi). Leave empty for auto-detection."
+msgstr "Language code (e.g., en, fi). Leave empty for auto-detection."
+
+#: includes/blocks/block.json
+msgctxt "block title"
+msgid "Referenssipalvelu References"
+msgstr "Referenssipalvelu References"
+
+#: includes/blocks/block.json
+msgctxt "block description"
+msgid ""
+"Display your Referenssipalvelu references with filters and customizable "
+"layout."
+msgstr ""
+"Display your Referenssipalvelu references with filters and customizable "
+"layout."

@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  php:
+    name: PHP lint and coding standards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          coverage: none
+          tools: composer
+
+      - name: PHP syntax check
+        run: find . -name '*.php' -not -path './vendor/*' -exec php -l {} +
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      # Local run of this ruleset is clean on the current codebase,
+      # so phpcs failures should fail the build.
+      - name: PHP_CodeSniffer
+        run: vendor/bin/phpcs
+        continue-on-error: false
+
+  js:
+    name: JavaScript syntax check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: node --check
+        run: |
+          set -e
+          for file in assets/js/*.js; do
+            echo "Checking $file"
+            node --check "$file"
+          done

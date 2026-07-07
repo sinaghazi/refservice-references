@@ -1,0 +1,463 @@
+# Copyright (C) 2025 RefService
+# This file is distributed under the same license as the RefService References plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Referenssipalvelu References 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-07 20:02+0300\n"
+"PO-Revision-Date: 2026-07-07 20:06+0300\n"
+"Last-Translator: RefService <support@refservice.com>\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/class-api-client.php:64
+msgid "API key is not configured."
+msgstr "API-avainta ei ole määritetty."
+
+#: includes/class-api-client.php:83 includes/class-api-client.php:132
+msgid "API request failed."
+msgstr "API-pyyntö epäonnistui."
+
+#: includes/class-api-client.php:146
+msgid "Invalid JSON response from API."
+msgstr "Virheellinen JSON-vastaus API:sta."
+
+#: includes/class-display.php:135
+msgid "No references found."
+msgstr "Referenssejä ei löytynyt."
+
+#: includes/class-display.php:187
+msgid "Previous"
+msgstr "Edellinen"
+
+#: includes/class-display.php:190
+msgid "Next"
+msgstr "Seuraava"
+
+#: includes/class-display.php:285
+msgid "Read More"
+msgstr "Lue lisää"
+
+#: includes/class-reference-detail.php:66
+msgid "Reference ID is required."
+msgstr "Referenssin ID vaaditaan."
+
+#: includes/class-reference-detail.php:94
+msgid "Reference not found."
+msgstr "Referenssiä ei löytynyt."
+
+#: includes/class-settings.php:62
+msgid "Referenssipalvelu References Settings"
+msgstr "Referenssipalvelu-referenssien asetukset"
+
+#: includes/class-settings.php:63 assets/js/block-editor.js:12
+msgid "Referenssipalvelu References"
+msgstr "Referenssipalvelu-referenssit"
+
+#: includes/class-settings.php:102
+msgid "API Configuration"
+msgstr "API-asetukset"
+
+#: includes/class-settings.php:109
+msgid "API Key"
+msgstr "API-avain"
+
+#: includes/class-settings.php:117
+msgid "API Endpoint URL"
+msgstr "API-päätepisteen URL"
+
+#: includes/class-settings.php:125
+msgid "Cache Duration (minutes)"
+msgstr "Välimuistin kesto (minuutteina)"
+
+#: includes/class-settings.php:133
+msgid "Default References Limit"
+msgstr "Oletusreferenssien raja"
+
+#: includes/class-settings.php:141
+msgid "Default Layout"
+msgstr "Oletusasettelu"
+
+#: includes/class-settings.php:150 assets/js/block-editor.js:56
+msgid "Display Settings"
+msgstr "Näyttöasetukset"
+
+#: includes/class-settings.php:157
+msgid "Display Mode"
+msgstr "Näyttötila"
+
+#: includes/class-settings.php:165
+msgid "Custom CSS"
+msgstr "Mukautettu CSS"
+
+#: includes/class-settings.php:173
+msgid "Reference Detail URL Pattern"
+msgstr "Referenssin lisätietosivun URL-malli"
+
+#: includes/class-settings.php:248
+msgid "Configure your Referenssipalvelu API connection below."
+msgstr "Määritä Referenssipalvelun API-yhteys alla."
+
+#: includes/class-settings.php:258
+msgid "Leave empty to keep the current key"
+msgstr "Jätä tyhjäksi säilyttääksesi nykyisen avaimen"
+
+#: includes/class-settings.php:259
+msgid "Enter your API key"
+msgstr "Syötä API-avain"
+
+#. translators: %s: masked API key showing only the last four characters.
+#: includes/class-settings.php:272
+#, php-format
+msgid "A key is configured. Current key: %s. Leave the field empty to keep the existing key."
+msgstr "Avain on määritetty. Nykyinen avain: %s. Jätä kenttä tyhjäksi säilyttääksesi nykyisen avaimen."
+
+#: includes/class-settings.php:279
+msgid "Remove the stored API key on save (disconnects this site from the API)"
+msgstr "Poista tallennettu API-avain tallennettaessa (katkaisee tämän sivuston API-yhteyden)"
+
+#: includes/class-settings.php:283
+msgid "Based on your package, you can request activation of API Service and obtain an API key from your Referenssipalvelu account manager."
+msgstr "Pakettisi mukaan voit pyytää API-palvelun aktivointia ja saada API-avaimen Referenssipalvelun yhteyshenkilöltäsi."
+
+#: includes/class-settings.php:306
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: includes/class-settings.php:309
+msgid "The hosted Referenssipalvelu API endpoint. This is pre-configured and normally should not be changed. Click \"Edit\" only if you are connecting to a different or local installation."
+msgstr "Referenssipalvelun API-osoite. Tämä on valmiiksi määritetty, eikä sitä yleensä tarvitse muuttaa. Napsauta \"Muokkaa\" vain, jos yhdistät toiseen tai paikalliseen asennukseen."
+
+#: includes/class-settings.php:328
+msgid "How long to cache API responses in minutes. Recommended: 15-30 minutes."
+msgstr "Kuinka kauan API-vastaukset välimuistitetaan minuutteina. Suositeltu: 15-30 minuuttia."
+
+#: includes/class-settings.php:346
+msgid "Default number of references to display. Leave empty for all references."
+msgstr "Oletusreferenssien määrä. Jätä tyhjäksi näyttääksesi kaikki referenssit."
+
+#: includes/class-settings.php:359 assets/js/block-editor.js:73
+msgid "Grid"
+msgstr "Ruudukko"
+
+#: includes/class-settings.php:360 assets/js/block-editor.js:74
+msgid "List"
+msgstr "Lista"
+
+#: includes/class-settings.php:361 assets/js/block-editor.js:75
+msgid "Carousel"
+msgstr "Karuselli"
+
+#: includes/class-settings.php:364
+msgid "Default layout for displaying references. Can be overridden per shortcode/block."
+msgstr "Referenssien oletusasettelu. Voidaan ohittaa lyhytkoodi- tai lohkokohtaisesti."
+
+#: includes/class-settings.php:374
+msgid "Configure how references are displayed on your site."
+msgstr "Määritä, miten referenssit näytetään sivustollasi."
+
+#: includes/class-settings.php:385
+msgid "Themed (Plugin Styles)"
+msgstr "Teemoitettu (Liitännäisen tyylit)"
+
+#: includes/class-settings.php:386
+msgid "No-Themed (Theme Controls)"
+msgstr "Ei-teemoitettu (Teema hallitsee)"
+
+#: includes/class-settings.php:389
+msgid "Themed: loads the full plugin stylesheet (cards, shadows, colors, hover effects) — works out of the box on any theme."
+msgstr "Teemallinen: lataa lisäosan koko tyylitiedoston (kortit, varjot, värit, hover-tehosteet) — toimii sellaisenaan missä tahansa teemassa."
+
+#: includes/class-settings.php:391
+msgid "No-Themed: loads only minimal structural CSS (grid, image ratios, carousel mechanics) so your theme fully controls the visual styling."
+msgstr "Teematon: lataa vain välttämättömän rakenteellisen CSS:n (ruudukko, kuvasuhteet, karusellin toiminta), jolloin teemasi hallitsee ulkoasua kokonaan."
+
+#: includes/class-settings.php:393
+msgid "Tip: both modes expose the same CSS variables and class names, so the Custom CSS below works in either mode."
+msgstr "Vinkki: molemmat tilat käyttävät samoja CSS-muuttujia ja luokkanimiä, joten alla oleva mukautettu CSS toimii kummassakin tilassa."
+
+#: includes/class-settings.php:409
+msgid "Brand accent color"
+msgstr "Brändin korostusväri"
+
+#: includes/class-settings.php:413
+msgid "Rounded cards + soft shadow"
+msgstr "Pyöristetyt kortit + pehmeä varjo"
+
+#: includes/class-settings.php:417
+msgid "Compact grid spacing"
+msgstr "Tiivis ruudukko"
+
+#: includes/class-settings.php:423
+msgid "Quick presets (click to add to the CSS box):"
+msgstr "Pikamallit (napsauta lisätäksesi CSS-kenttään):"
+
+#: includes/class-settings.php:438
+msgid "Add custom CSS to override plugin styles..."
+msgstr "Lisää mukautettu CSS ohittaaksesi liitännäisen tyylit..."
+
+#: includes/class-settings.php:440
+msgid "Add custom CSS to override plugin styles. This CSS is loaded after the plugin styles, in both Themed and No-Themed modes."
+msgstr "Lisää mukautettua CSS:ää lisäosan tyylien ohittamiseksi. Tämä CSS ladataan lisäosan tyylien jälkeen sekä teemallisessa että teemattomassa tilassa."
+
+#: includes/class-settings.php:458
+msgid "Controls where a reference card's \"Read More\" link points. Two placeholders are available:"
+msgstr "Määrittää, mihin referenssikortin \"Lue lisää\" -linkki osoittaa. Käytettävissä on kaksi muuttujaa:"
+
+#: includes/class-settings.php:461
+msgid "the reference ID"
+msgstr "referenssin ID"
+
+#: includes/class-settings.php:462
+msgid "your company subdomain (from the API)"
+msgstr "yrityksesi alidomain (API:sta)"
+
+#: includes/class-settings.php:465
+msgid "Choose one of these approaches:"
+msgstr "Valitse jokin näistä tavoista:"
+
+#: includes/class-settings.php:469
+msgid "Leave empty (default)"
+msgstr "Jätä tyhjäksi (oletus)"
+
+#: includes/class-settings.php:470
+msgid "links use this site's built-in detail page:"
+msgstr "linkit käyttävät tämän sivuston sisäänrakennettua lisätietosivua:"
+
+#: includes/class-settings.php:472
+msgid "Requires \"pretty\" permalinks (Settings > Permalinks, anything other than \"Plain\")."
+msgstr "Vaatii selkokieliset osoitteet (Asetukset > Osoiterakenne, mikä tahansa muu kuin \"Perus\")."
+
+#: includes/class-settings.php:475
+msgid "External Referenssipalvelu page"
+msgstr "Ulkoinen Referenssipalvelu-sivu"
+
+#: includes/class-settings.php:476
+msgid "opens the reference on the hosted service in a new tab:"
+msgstr "avaa referenssin Referenssipalvelussa uudessa välilehdessä:"
+
+#: includes/class-settings.php:481
+msgid "Another WordPress page"
+msgstr "Toinen WordPress-sivu"
+
+#: includes/class-settings.php:482
+msgid "point to a page that contains the detail shortcode:"
+msgstr "osoita sivulle, joka sisältää lisätieto-lyhytkoodin:"
+
+#: includes/class-settings.php:485
+msgid "(then place"
+msgstr "(lisää sitten"
+
+#: includes/class-settings.php:485
+msgid "on that page)."
+msgstr "kyseiselle sivulle)."
+
+#: includes/class-settings.php:489
+msgid "Note: any pattern beginning with http/https opens in a new browser tab."
+msgstr "Huomio: http/https-alkuiset mallit avautuvat uudessa selainvälilehdessä."
+
+#: includes/class-settings.php:506
+msgid "Cache cleared successfully."
+msgstr "Välimuisti tyhjennetty onnistuneesti."
+
+#: includes/class-settings.php:516
+msgid "Save Settings"
+msgstr "Tallenna asetukset"
+
+#: includes/class-settings.php:522 includes/class-settings.php:529
+msgid "Clear Cache"
+msgstr "Tyhjennä välimuisti"
+
+#: includes/class-settings.php:525
+msgid "Clear all cached API responses."
+msgstr "Tyhjennä kaikki välimuistitetyt API-vastaukset."
+
+#: includes/class-settings.php:534
+msgid "Usage"
+msgstr "Käyttö"
+
+#: includes/class-settings.php:535
+msgid "You can display references with the Gutenberg block (\"Referenssipalvelu References\") or with shortcodes on any page, post, or widget."
+msgstr "Voit näyttää referenssit Gutenberg-lohkolla (\"Referenssipalvelu-referenssit\") tai lyhytkoodeilla millä tahansa sivulla, artikkelissa tai vimpaimessa."
+
+#: includes/class-settings.php:537
+msgid "Reference list"
+msgstr "Referenssilista"
+
+#: includes/class-settings.php:541
+msgid "Shortcode"
+msgstr "Lyhytkoodi"
+
+#: includes/class-settings.php:542
+msgid "What it does"
+msgstr "Mitä se tekee"
+
+#: includes/class-settings.php:548
+msgid "All references, using your default layout."
+msgstr "Kaikki referenssit oletusasettelulla."
+
+#: includes/class-settings.php:552
+msgid "First 6 references in a 3-column grid."
+msgstr "Ensimmäiset 6 referenssiä 3 sarakkeen ruudukossa."
+
+#: includes/class-settings.php:556
+msgid "List layout (image beside text)."
+msgstr "Lista-asettelu (kuva tekstin vieressä)."
+
+#: includes/class-settings.php:560
+msgid "Sliding carousel showing 3 cards at a time."
+msgstr "Liukuva karuselli, jossa näkyy 3 korttia kerrallaan."
+
+#: includes/class-settings.php:564
+msgid "Only references tagged with those product/service IDs."
+msgstr "Vain referenssit, jotka on merkitty kyseisillä tuote-/palvelu-ID:illä."
+
+#: includes/class-settings.php:568
+msgid "Filter by your two custom category dimensions."
+msgstr "Suodata kahden mukautetun kategoriaulottuvuuden mukaan."
+
+#: includes/class-settings.php:572
+msgid "Force Finnish (otherwise the language is auto-detected)."
+msgstr "Pakota suomi (muuten kieli tunnistetaan automaattisesti)."
+
+#: includes/class-settings.php:576
+msgid "Attributes can be combined, e.g."
+msgstr "Attribuutteja voi yhdistellä, esim."
+
+#: includes/class-settings.php:578
+msgid "Single reference detail"
+msgstr "Yksittäisen referenssin lisätiedot"
+
+#: includes/class-settings.php:579
+msgid "Show one full reference (hero image, gallery, contact, delivery date) on its own page:"
+msgstr "Näytä yksi referenssi kokonaisuudessaan (pääkuva, galleria, yhteystiedot, toimitusaika) omalla sivullaan:"
+
+#: includes/class-settings.php:581
+msgid "An alias"
+msgstr "Myös alias"
+
+#: includes/class-settings.php:581
+msgid "works too. You can also link cards to the built-in detail route"
+msgstr "toimii. Voit myös linkittää kortit sisäänrakennettuun lisätieto-osoitteeseen"
+
+#: includes/class-settings.php:581
+msgid "(see Reference Detail URL Pattern above)."
+msgstr "(katso Referenssin lisätietosivun URL-malli yllä)."
+
+#: includes/class-settings.php:585
+msgid "Language Support"
+msgstr "Kielituki"
+
+#: includes/class-settings.php:592
+msgid "The plugin automatically detects and uses the appropriate language based on:"
+msgstr "Liitännäinen tunnistaa ja käyttää automaattisesti sopivaa kieltä perustuen:"
+
+#: includes/class-settings.php:594
+msgid "WordPress site language"
+msgstr "WordPress-sivuston kieli"
+
+#: includes/class-settings.php:595
+msgid "Company enabled languages"
+msgstr "Yrityksen käytössä olevat kielet"
+
+#: includes/class-settings.php:599
+msgid "Not available (check API connection)"
+msgstr "Ei saatavilla (tarkista API-yhteys)"
+
+#: includes/class-settings.php:602
+msgid "Currently detected language"
+msgstr "Tällä hetkellä tunnistettu kieli"
+
+#: includes/class-settings.php:605
+msgid "You can override the language by adding the language parameter to shortcodes: [refservice language=\"fi\"]"
+msgstr "Voit ohittaa kielen lisäämällä kieliparametrin lyhytkoodeihin: [refservice language=\"fi\"]"
+
+#: includes/class-shortcode.php:75
+msgid "Reference ID is required. Use: [refservice_detail id=\"1\"]"
+msgstr "Referenssin ID vaaditaan. Käytä: [refservice_detail id=\"1\"]"
+
+#: templates/reference-detail.php:61
+msgid "Gallery"
+msgstr "Galleria"
+
+#: templates/reference-detail.php:83
+msgid "Contact"
+msgstr "Yhteystiedot"
+
+#: assets/js/block-editor.js:15
+msgid "Display your Referenssipalvelu references with filters and customizable layout."
+msgstr "Näytä Referenssipalvelu-referenssisi suodattimilla ja mukautettavalla asettelulla."
+
+#: assets/js/block-editor.js:58
+msgid "Number of References"
+msgstr "Referenssien määrä"
+
+#: assets/js/block-editor.js:64
+msgid "Leave empty to show all references"
+msgstr "Jätä tyhjäksi näyttääksesi kaikki referenssit"
+
+#: assets/js/block-editor.js:67
+msgid "Layout"
+msgstr "Asettelu"
+
+#: assets/js/block-editor.js:72
+msgid "Site default"
+msgstr "Sivuston oletus"
+
+#: assets/js/block-editor.js:80
+msgid "Columns"
+msgstr "Sarakkeet"
+
+#: assets/js/block-editor.js:87
+msgid "Filter Settings"
+msgstr "Suodatusasetukset"
+
+#: assets/js/block-editor.js:89
+msgid "Product IDs"
+msgstr "Tuote-ID:t"
+
+#: assets/js/block-editor.js:92
+msgid "Comma-separated product IDs (e.g., 1,2,3)"
+msgstr "Pilkuin erotellut tuote-ID:t (esim. 1,2,3)"
+
+#: assets/js/block-editor.js:95
+msgid "Service IDs"
+msgstr "Palvelu-ID:t"
+
+#: assets/js/block-editor.js:98
+msgid "Comma-separated service IDs (e.g., 1,2)"
+msgstr "Pilkuin erotellut palvelu-ID:t (esim. 1,2)"
+
+#: assets/js/block-editor.js:101
+msgid "Custom Category 1 IDs"
+msgstr "Mukautetun kategorian 1 ID:t"
+
+#: assets/js/block-editor.js:104 assets/js/block-editor.js:110
+msgid "Comma-separated category IDs"
+msgstr "Pilkuin erotellut kategoria-ID:t"
+
+#: assets/js/block-editor.js:107
+msgid "Custom Category 2 IDs"
+msgstr "Mukautetun kategorian 2 ID:t"
+
+#: assets/js/block-editor.js:113
+msgid "Language Code"
+msgstr "Kielikoodi"
+
+#: assets/js/block-editor.js:116
+msgid "Language code (e.g., en, fi). Leave empty for auto-detection."
+msgstr "Kielikoodi (esim. en, fi). Jätä tyhjäksi automaattista tunnistusta varten."
+
+#: includes/blocks/block.json
+msgctxt "block title"
+msgid "Referenssipalvelu References"
+msgstr "Referenssipalvelu-referenssit"
+
+#: includes/blocks/block.json
+msgctxt "block description"
+msgid "Display your Referenssipalvelu references with filters and customizable layout."
+msgstr "Näytä Referenssipalvelu-referenssisi suodattimilla ja mukautettavalla asettelulla."

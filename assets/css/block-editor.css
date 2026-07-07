@@ -1,0 +1,58 @@
+/**
+ * RefService References Block Editor Styles
+ */
+
+.refservice-block-editor {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.refservice-block-preview-wrapper {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+.refservice-block-preview-wrapper .components-placeholder {
+    min-height: 150px;
+}
+
+.refservice-block-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.refservice-block-preview-text {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.refservice-block-preview-text small {
+    display: block;
+    margin-top: 8px;
+    color: #666;
+    font-size: 12px;
+}
+
+.refservice-block-editor .components-panel__body {
+    margin-bottom: 16px;
+}
+
+.refservice-block-editor .components-base-control {
+    margin-bottom: 16px;
+}
+
+.refservice-block-editor .components-base-control__help {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #666;
+}
+

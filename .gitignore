@@ -1,0 +1,13 @@
+# Composer dependencies (dev-only lint tooling).
+/vendor/
+
+# Lock file is not committed: all Composer dependencies are dev-only
+# lint tooling, and WordPress plugins typically ship without a lock file.
+composer.lock
+
+# PHP_CodeSniffer cache.
+.phpcs-cache
+
+# Node dependencies.
+node_modules/
+CLAUDE.md

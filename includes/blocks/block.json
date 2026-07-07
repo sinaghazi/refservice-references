@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "refservice/references",
+    "title": "Referenssipalvelu References",
+    "icon": "portfolio",
+    "category": "widgets",
+    "description": "Display your Referenssipalvelu references with filters and customizable layout.",
+    "textdomain": "refservice-references",
+    "attributes": {
+        "limit": {
+            "type": "number"
+        },
+        "layout": {
+            "type": "string"
+        },
+        "columns": {
+            "type": "number",
+            "default": 3
+        },
+        "products": {
+            "type": "string",
+            "default": ""
+        },
+        "services": {
+            "type": "string",
+            "default": ""
+        },
+        "customCategory1": {
+            "type": "string",
+            "default": ""
+        },
+        "customCategory2": {
+            "type": "string",
+            "default": ""
+        },
+        "language": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "editorScript": "refservice-references-block-editor",
+    "editorStyle": "refservice-references-block-editor"
+}
