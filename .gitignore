@@ -11,3 +11,6 @@ composer.lock
 # Node dependencies.
 node_modules/
 CLAUDE.md
+
+# Local release-build staging (mirrors the release workflow build dir).
+/build/
